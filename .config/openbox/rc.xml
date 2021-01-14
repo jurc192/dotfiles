@@ -33,7 +33,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Triste-Crimson</name>
+    <name>Triste-Froly</name>
     <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -256,8 +256,6 @@
       </action>
     </keybind>
     <!-- JUR STUFF -->
-
-
     <keybind key="W-Up">
       <action name="Maximize"/>
     </keybind>
@@ -288,7 +286,6 @@
         <height>100%</height>
       </action>
     </keybind>
-
     <!-- dummy keybind
     <keybind key="W-m"> 
       <action name="ShowMenu">
@@ -299,14 +296,12 @@
       </position>
       </action>
     </keybind> -->
-
     <keybind key="C-A-S-p">
       <action name="Execute">
         <prompt>Are you sure you want to shutdown?</prompt>
         <command>systemctl poweroff</command>
       </action>
     </keybind>
-
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -368,7 +363,6 @@
         <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
-  
     <keybind key="W-1">
       <action name="Execute">
         <startupnotify>
@@ -378,7 +372,6 @@
         <command>thunar</command>
       </action>
     </keybind>
-
     <keybind key="W-2">
       <action name="Execute">
         <startupnotify>
@@ -388,21 +381,13 @@
         <command>firefox</command>
       </action>
     </keybind>
-
     <!-- <keybind key="Super_L"> -->
     <keybind key="C-A-S-W-d">
       <action name="Execute">
         <command>rofi -show run</command>
       </action>
     </keybind>
-
-
-  
-  
   </keyboard>
-
-
-
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
@@ -763,15 +748,13 @@
     <manageDesktops>yes</manageDesktops>
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
-
   <applications>
-
     <!-- JUR: application rules -->
     <application class="firefox">
       <desktop>1</desktop>
       <maximized>yes</maximized>
     </application>
-<!-- 
+    <!-- 
     <application class="typora">
       <desktop>2</desktop>
       <maximized>yes</maximized>
@@ -781,7 +764,6 @@
       <desktop>3</desktop>
       <maximized>yes</maximized>
     </application> -->
-
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
@@ -878,5 +860,3 @@
 -->
   </applications>
 </openbox_config>
-
-
