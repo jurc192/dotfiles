@@ -171,6 +171,19 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
+    <keybind key="Control_R-Left">
+      <action name="GoToDesktop">
+        <to>left</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>    
+    <keybind key="Mod1-Right">
+      <action name="GoToDesktop">
+        <to>right</to>
+        <wrap>no</wrap>
+      </action>
+    </keybind>    
+
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
@@ -269,6 +282,8 @@
         <height>70%</height>
       </action>
     </keybind>
+
+    <!-- WINDOW PLACEMENT -->
     <keybind key="W-Left">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -287,12 +302,24 @@
         <height>100%</height>
       </action>
     </keybind>
+    
+    
+    <!-- WINDOW PLACEMENT (QUARTERS) -->
     <keybind key="W-KP_7">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
         <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-KP_8">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
         <height>50%</height>
       </action>
     </keybind>
@@ -305,6 +332,33 @@
         <height>50%</height>
       </action>
     </keybind>
+    <keybind key="W-KP_4">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-KP_5">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+        <width>50%</width>
+        <height>70%</height>
+      </action>
+    </keybind>
+    <keybind key="W-KP_6">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
     <keybind key="W-KP_1">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -314,7 +368,16 @@
         <height>50%</height>
       </action>
     </keybind>
-        <keybind key="W-KP_3">
+    <keybind key="W-KP_2">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>50%</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-KP_3">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>50%</x>
@@ -323,17 +386,90 @@
         <height>50%</height>
       </action>
     </keybind>
-
-    <!-- dummy keybind
-    <keybind key="W-m"> 
-      <action name="ShowMenu">
-        <menu>power-menu</menu>
-        <position>
-          <x>-0</x>
-          <y>30</y>
-      </position>
+ 
+<!--    WINDOW PLACEMENT (thirds) -->
+    <keybind key="W-S-KP_7">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>34%</width>
+        <height>50%</height>
       </action>
-    </keybind> -->
+    </keybind>
+    <keybind key="W-S-KP_8">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>0</y>
+        <width>34%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_9">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>67%</x>
+        <y>0</y>
+        <width>33%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_4">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>center</y>
+        <width>34%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_5">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+        <width>34%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_6">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>67%</x>
+        <y>center</y>
+        <width>33%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_1">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>50%</y>
+        <width>34%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_2">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>50%</y>
+        <width>33%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-S-KP_3">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>67%</x>
+        <y>50%</y>
+        <width>33%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+
     <keybind key="C-A-S-p">
       <action name="Execute">
         <prompt>Are you sure you want to shutdown?</prompt>
@@ -392,12 +528,20 @@
     </keybind>
 
     <!-- <keybind key="Super_L"> -->
+    <!-- Use xev utility to map it to button release -->
     <keybind key="C-A-S-W-d">
       <action name="Execute">
         <command>rofi -show run</command>
       </action>
     </keybind>
+
+
+
   </keyboard>
+
+
+
+
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
