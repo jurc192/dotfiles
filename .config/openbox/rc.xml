@@ -167,6 +167,7 @@
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
+
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
@@ -280,12 +281,49 @@
     <keybind key="W-Right">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <x>-0</x>
+        <x>50%</x>
         <y>0</y>
         <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>
+    <keybind key="W-KP_7">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-KP_9">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-KP_1">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>50%</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+        <keybind key="W-KP_3">
+      <action name="Unmaximize"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>50%</y>
+        <width>50%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+
     <!-- dummy keybind
     <keybind key="W-m"> 
       <action name="ShowMenu">
@@ -321,48 +359,9 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-S-Right">
-      <action name="DirectionalCycleWindows">
-        <direction>right</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Left">
-      <action name="DirectionalCycleWindows">
-        <direction>left</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Up">
-      <action name="DirectionalCycleWindows">
-        <direction>up</direction>
-      </action>
-    </keybind>
-    <keybind key="W-S-Down">
-      <action name="DirectionalCycleWindows">
-        <direction>down</direction>
-      </action>
-    </keybind>
+
+
     <!-- Keybindings for running applications -->
-    <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-        <command>kfmclient openProfile filemanagement</command>
-      </action>
-    </keybind>
     <keybind key="W-1">
       <action name="Execute">
         <startupnotify>
@@ -381,6 +380,17 @@
         <command>firefox</command>
       </action>
     </keybind>
+
+    <keybind key="W-t">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>xfce4-terminal</command>
+      </action>
+    </keybind>
+
     <!-- <keybind key="Super_L"> -->
     <keybind key="C-A-S-W-d">
       <action name="Execute">
