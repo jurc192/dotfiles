@@ -13,6 +13,8 @@ alias gits='git status'
 alias gitl='git log --oneline'
 alias gitb='git branch -a'
 
+alias dots='git --git-dir=/home/jure/.dotfiles_git/ --work-tree=/home/jure'
+alias dotss='dots status'
+alias dotsl='dots log --oneline'
+
 PS1='[\u@\h \W]\$ '
-alias dots='git --git-dir=/home/jure/.dotfiles_git/ --work-tree=/home/jure'
-alias dots='git --git-dir=/home/jure/.dotfiles_git/ --work-tree=/home/jure'
