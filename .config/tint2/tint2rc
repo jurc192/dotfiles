@@ -8,10 +8,11 @@
 # Backgrounds
 
 
-# Color pallette:
+# Color palette:
 #   #1D1F21 background
 #   #C5C8C6 foreground
 #   #F0C674 accent - yellow
+#   #969896 gray 
 
 # Background 1: Base
 rounded = 0
@@ -19,37 +20,56 @@ background_color = #1D1F21 100
 background_color_hover = #C4C4C4 15
 background_color_pressed = #C4C4C4 8
 
+# Background 2: Background task
+rounded = 0
+background_color = #C4C4C4 15
+background_color_hover = #C4C4C4 15
+background_color_pressed = #C4C4C4 8
+border_sides = B
+border_width = 2
+border_color = #969896 100
 
+# Background 3: Active task
+rounded = 0
+background_color = #C4C4C4 15
+background_color_hover = #C4C4C4 15
+background_color_pressed = #C4C4C4 8
+border_sides = B
+border_width = 2
+border_color = #F0C674 100
 
+# Background 4: Minimized task
+rounded = 0
+background_color = #1D1F21 100
+background_color_hover = #C4C4C4 15
+background_color_pressed = #C4C4C4 8
+border_sides = B
+border_width = 2
+border_color = #969896 100
 
 #-------------------------------------
 # Panel
-# (Pushbutton, Launcher, Taskbar, Systemtray, Battery, Executor, Clock, Pushbutton...) 
+# (Pushbutton, Taskbar, Systemtray, Battery, Executor, Clock, Pushbutton...) 
 panel_items = PTSBCP
 panel_size = 100% 35
 panel_margin = 0 0
 panel_padding = 0 2 0
 panel_background_id = 1
-wm_menu = 1
+
+wm_menu = 0
 panel_dock = 0
 panel_pivot_struts = 0
 panel_position = top center horizontal
 panel_layer = bottom
 panel_monitor = all
 panel_shrink = 0
-autohide = 0
-autohide_show_timeout = 0.3
-autohide_hide_timeout = 1.5
-autohide_height = 6
+
 strut_policy = follow_size
 panel_window_name = tint2
-disable_transparency = 0
 mouse_effects = 1
-font_shadow = 0
 mouse_hover_icon_asb = 100 0 10
 mouse_pressed_icon_asb = 100 0 0
-scale_relative_to_dpi = 0
-scale_relative_to_screen_height = 0
+
 
 #-------------------------------------
 # Pushbutton (Application Launcher)
@@ -57,59 +77,51 @@ button = new
 button_icon = ~/Linux_stuff/arch-logo.svg
 button_tooltip = Show desktop
 button_lclick_command = ~/.config/tint2/executors/show_desktop.sh
-button_padding = 20 0
+button_padding = 16 0
 button_background_id = 1
 
 
 #-------------------------------------
 # Taskbar
 taskbar_mode = single_desktop
-taskbar_hide_if_empty = 0
-taskbar_padding = 3 3 5
-taskbar_background_id = 3
-taskbar_active_background_id = 3
-taskbar_name = 0
-taskbar_hide_inactive_tasks = 0
-taskbar_hide_different_monitor = 0
-taskbar_hide_different_desktop = 1
-taskbar_always_show_all_desktop_tasks = 1
-taskbar_name_padding = 4 2
-taskbar_name_background_id = 2
-taskbar_name_active_background_id = 2
-taskbar_name_font = Roboto 8
-taskbar_name_font_color = #ffffff 60
-taskbar_name_active_font_color = #ffffff 100
+taskbar_padding = 0 0 5
+taskbar_background_id = 1
+taskbar_active_background_id = 1
+
 taskbar_distribute_size = 1
 taskbar_sort_order = none
 task_align = left
 
 #-------------------------------------
 # Task
+task_background_id = 2
+task_active_background_id = 3
+task_iconified_background_id = 4
+task_urgent_background_id = 0
+
 task_text = 0
 task_icon = 1
 task_centered = 1
-urgent_nb_of_blink = 20
-task_maximum_size = 30 30 
-task_padding = 4 4 0
+
+task_maximum_size = 35 35 
+task_padding = 10 5 0
 task_font = Roboto 8
 task_tooltip = 1
 task_thumbnail = 0
 task_thumbnail_size = 110
 task_font_color = #ffffff 51
 task_active_font_color = #ffffff 100
+
 task_icon_asb = 100 0 0
 task_active_icon_asb = 100 0 0
 task_urgent_icon_asb = 100 0 0
 task_iconified_icon_asb = 90 0 0
-task_background_id = 0
-task_active_background_id = 6
-task_urgent_background_id = 0
-task_iconified_background_id = 0
+
 mouse_left = toggle_iconify
 mouse_middle = none
-mouse_right = close
-mouse_scroll_up = toggle
-mouse_scroll_down = iconify
+mouse_right = none
+mouse_scroll_up = none
+mouse_scroll_down = none
 
 
 # Separator
