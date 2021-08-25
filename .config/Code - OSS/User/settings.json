@@ -18,7 +18,7 @@
     "python.terminal.activateEnvironment": false,
     "python.dataScience.sendSelectionToInteractiveWindow": false,
     "C_Cpp.default.cppStandard": "c++17",
-    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.colorTheme": "Base16 Tomorrow Dark",
     "pigments.enabledExtensions": ".rand ",
     "terminal.external.linuxExec": "xfce4-terminal",
     "platformio-ide.activateOnlyOnPlatformIOProject": true,
