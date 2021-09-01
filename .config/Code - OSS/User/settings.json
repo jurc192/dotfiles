@@ -22,4 +22,7 @@
     "pigments.enabledExtensions": ".rand ",
     "terminal.external.linuxExec": "xfce4-terminal",
     "platformio-ide.activateOnlyOnPlatformIOProject": true,
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.startupPrompt": "never",
 }
