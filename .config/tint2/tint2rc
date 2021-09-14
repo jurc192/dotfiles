@@ -65,7 +65,7 @@ mouse_pressed_icon_asb = 100 0 0
 #-------------------------------------
 # Pushbutton (Application Launcher)
 button = new
-button_icon = ~/Linux_stuff/arch-logo.svg
+button_icon = ~/.themes/Jurandom/arch-logo.svg
 button_tooltip = Show desktop
 button_lclick_command = xfce4-appfinder
 button_padding = 16 0
