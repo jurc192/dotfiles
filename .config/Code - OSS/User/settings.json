@@ -1,13 +1,15 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
+    
     "editor.fontSize": 15,
     "editor.fontFamily": "'Fira Code' ,'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.minimap.enabled": false,
+    "editor.parameterHints.enabled": false,
+    "editor.renderWhitespace": "none",
+
     "explorer.openEditors.visible": 0,
     "breadcrumbs.enabled": false,
     "workbench.editor.focusRecentEditorAfterClose": false,
-    "window.zoomLevel": 0,
-    "editor.renderWhitespace": "none",
 
     "[python]": {
     "editor.insertSpaces": true,
