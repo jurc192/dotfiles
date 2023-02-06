@@ -1,3 +1,7 @@
 VteTerminal, vte-terminal {
 	padding: 10px;
 }
+
+window > image {
+    color: #ddd;
+}
